@@ -7,6 +7,9 @@ run: day*.py
 setup:
 	pip install -r requirements.txt
 
+clean:
+	rm -rf .AoC-*.tmp .*.sw?
+
 freeze: requirements.txt
 
 requirements.txt:
