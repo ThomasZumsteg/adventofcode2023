@@ -15,5 +15,5 @@ freeze: requirements.txt
 requirements.txt:
 	pip freeze > requirements.txt
 
-test:
-	pytest
+test: day*.py
+	pytest $^
