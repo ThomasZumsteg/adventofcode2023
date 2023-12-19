@@ -24,17 +24,27 @@ def part2(lines):
     return part1(lines, EXTRA)
 
 
+TEXT = """1abc2
+pqr3stu8vwx
+a1b2c3d4e5f
+treb7uchet"""
+
+
+def test_part1():
+    assert part1(line_parser(TEXT, parse=str)) == 142
+
+
+TEXT2 = """two1nine
+eightwothree
+abcone2threexyz
+xtwone3four
+4nineeightseven2
+zoneight234
+7pqrstsixteen"""
+
+
 def test_part2():
-    TEXT = """
-        two1nine
-        eightwothree
-        abcone2threexyz
-        xtwone3four
-        4nineeightseven2
-        zoneight234
-        7pqrstsixteen
-    """.strip().splitlines()
-    assert part2(TEXT) == 281
+    assert part2(line_parser(TEXT2, parse=str)) == 281
 
 
 if __name__ == "__main__":

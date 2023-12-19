@@ -1,8 +1,7 @@
 """Solution to day 17 of Advent of Code"""
 
-from get_input import get_input, line_parser
+from get_input import get_input
 from dataclasses import dataclass, field
-import pytest
 import heapq
 
 

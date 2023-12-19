@@ -80,7 +80,7 @@ def solutions(template, counts):
 def part1(springs):
     total = 0
     for template, counts in springs:
-        total += solutions_iter(template, counts)
+        total += solutions(template, counts)
     return total
 
 

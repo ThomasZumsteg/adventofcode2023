@@ -10,6 +10,9 @@ setup:
 clean:
 	rm -rf .AoC-*.tmp .*.sw?
 
+flake: day*.py
+	flake8 $^
+
 freeze: requirements.txt
 
 requirements.txt:

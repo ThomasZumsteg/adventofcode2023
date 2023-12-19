@@ -1,8 +1,6 @@
 """Solution to day 18 of Advent of Code"""
 
 from get_input import get_input, line_parser
-from collections import defaultdict
-from itertools import product, chain, batched
 
 
 def part1(steps, column=0):

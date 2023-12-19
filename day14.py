@@ -1,6 +1,6 @@
 """Solution to day 14 of Advent of Code"""
 
-from get_input import get_input, line_parser
+from get_input import get_input
 
 
 def cycle(rocks, direction, offset):

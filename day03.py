@@ -10,9 +10,9 @@ def part1(lines):
     total = 0
     # symbols = defaultdict(set)
     seen = set()
-    for l, line in enumerate(lines):
+    for i, line in enumerate(lines):
         for c, char in enumerate(line):
-            pos = complex(l, c)
+            pos = complex(i, c)
             if pos in seen:
                 continue
             has_symbol = False
@@ -40,9 +40,9 @@ def part2(lines):
     total = 0
     gears = defaultdict(set)
     seen = set()
-    for l, line in enumerate(lines):
+    for i, line in enumerate(lines):
         for c, char in enumerate(line):
-            pos = complex(l, c)
+            pos = complex(i, c)
             if pos in seen:
                 continue
             symbols = []
@@ -73,11 +73,11 @@ def part2(lines):
 
 def parse(lines):
     result = {}
-    for l, line in enumerate(lines):
+    for i, line in enumerate(lines):
         for c, char in enumerate(line):
             if char == '.':
                 continue
-            result[complex(l, c)] = char
+            result[complex(i, c)] = char
     return result
 
 
